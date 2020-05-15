@@ -53,7 +53,7 @@ a:hover {
 main {
   padding-top: 100px;
   min-height: 100%;
-  margin-bottom: -60px;
+  margin-bottom: 0px;
 }
 
 footer {
