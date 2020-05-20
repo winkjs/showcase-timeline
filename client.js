@@ -1,7 +1,5 @@
-console.log(1);
-
 var getTimeline = function (title) {
-  fetch('https://showcase-serverless.now.sh/wp-timeline?title='+title)
+  fetch('http://showcase-serverless.herokuapp.com/wp-timeline?title='+title)
     .then(function (res) {
       return res.json();
     }).then(function (d) {
@@ -51,7 +49,7 @@ var showResults = function (timeline) {
 $(function () {
   $('#timeline-button').on('click', function () {
     $('#error').hide();
-    
+
     // Check input string
     var title = $('#title')[0].value;
     if (title.trim() === '' ) return false;
