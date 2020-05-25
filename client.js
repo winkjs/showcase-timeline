@@ -1,5 +1,5 @@
 var getTimeline = function (title) {
-  fetch('http://showcase-serverless.herokuapp.com/wp-timeline?title='+title)
+  fetch('https://showcase-serverless.herokuapp.com/wp-timeline?title='+title)
     .then(function (res) {
       return res.json();
     }).then(function (d) {
