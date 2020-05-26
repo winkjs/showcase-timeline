@@ -17,7 +17,7 @@ var resetUI = function () {
 var showResults = function (timeline) {
   $('#error').hide();
 
-  if(Object.keys(timeline).length === 0){
+  if(timeline.length === 0){
     $('#error').show();
     $('#error').text('There in no Wikipedia article with that title. Try a different one, for example "Delhi".')
     return;
@@ -27,17 +27,22 @@ var showResults = function (timeline) {
   $('.entries').empty();
 
   var lastYear = '';
-  Object.keys(timeline).forEach((t) => {
-    var century = t[0]+ ''+ t[1];
-    var className = '';
-    if ( lastYear !== century ) {
-        lastYear = century;
-        className = 'big'
+  timeline.forEach((t) => {
+    console.log(t.date);
+    if (isNaN(t.date)) {
+      className = 'big';
+    } else {
+      var century = t.date[0]+ ''+ t.date[1];
+      var className = '';
+      if ( lastYear !== century ) {
+          lastYear = century;
+          className = 'big'
+      }
     }
 
     $entry = $('<div>').addClass('entry').append(
-      $('<div>').addClass('title').addClass(className).text(t),
-      $('<div>').addClass('body').text(timeline[t]),
+      $('<div>').addClass('title').addClass(className).text(t.date),
+      $('<div>').addClass('body').html(t.sentence),
     )
 
 
