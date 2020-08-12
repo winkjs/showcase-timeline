@@ -52,6 +52,9 @@ var showResults = function (timeline) {
 }
 
 $(function () {
+  // Warming up the server for the user's request
+  fetch('https://showcase-serverless.herokuapp.com/wp-timeline?title=Delhi');
+
   $('#timeline-button').on('click', function () {
     $('#error').hide();
 
