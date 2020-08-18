@@ -54,7 +54,13 @@
         <div class="col-md-8 col-md-offset-2">
           <h1>Wikipedia timeline</h1>
           <form onsubmit="return false;">
-            <input type="text" name="" placeholder="Delhi" id="title">
+            <input type="text" name="" placeholder="Wikipedia Article" id="title" autocomplete="off" value="New York City">
+            <p class="explanation-text">
+              Enter a Wikipedia article name to get its timeline. <br>
+              For example:
+              <a href="javascript:void(0)" class="js-article-ex">Women's suffrage</a> or
+              <a href="javascript:void(0)" class="js-article-ex">Indian independence movement</a>
+            </p>
             <br><br>
             <input type="submit" name="" value="Create timeline" id="timeline-button">
           </form>

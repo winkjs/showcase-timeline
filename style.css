@@ -116,3 +116,9 @@ footer .social-icons ul li a img.github {
   width: 1px;
   word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
 }
+
+.explanation-text {
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: -16px;
+}
