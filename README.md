@@ -6,7 +6,7 @@
 
 [<img align="right" src="https://decisively.github.io/wink-logos/logo-title.png" width="100px" >](https://winkjs.org/)
 
-This demo taken an article from English Wikipedia and converts it into a timeline. It does this by using the **entity recognition** in [winkNLP]((https://github.com/winkjs/wink-nlp). For all the `DATE`s that it finds it looks for the [shapes](https://winkjs.org/wink-nlp/its-as-helper.html) that can be understood by the JavaScript [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getTime) object.
+This demo taken an article from English Wikipedia and converts it into a timeline. It does this by using the **entity recognition** in [winkNLP](https://github.com/winkjs/wink-nlp). For all the `DATE`s that it finds it looks for the [shapes](https://winkjs.org/wink-nlp/its-as-helper.html) that can be understood by the JavaScript [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getTime) object.
 
 ### How to build this
 [<img align="right" src="https://user-images.githubusercontent.com/9491/100735262-f2002800-33f6-11eb-97a6-4a8fe6ee77ff.png" width="220px" >](https://winkjs.org/showcase-timeline/)
