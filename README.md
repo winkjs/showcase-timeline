@@ -9,7 +9,7 @@
 This demo taken an article from English Wikipedia and converts it into a timeline. It does this by using the **entity recognition** in [winkNLP]((https://github.com/winkjs/wink-nlp). For all the `DATE`s that it finds it looks for the [shapes](https://winkjs.org/wink-nlp/its-as-helper.html) that can be understood by the JavaScript [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getTime) object.
 
 ### How to build this
-[<img align="right" src="https://user-images.githubusercontent.com/9491/100734470-bf096480-33f5-11eb-8060-a5f330c63011.png" width="220px" >](https://winkjs.org/showcase-timeline/)
+[<img align="right" src="https://user-images.githubusercontent.com/9491/100735262-f2002800-33f6-11eb-97a6-4a8fe6ee77ff.png" width="220px" >](https://winkjs.org/showcase-timeline/)
 
 ```javascript
 const winkNLP = require('wink-nlp');
