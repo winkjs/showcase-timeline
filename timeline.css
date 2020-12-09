@@ -1,3 +1,8 @@
+.navbar .navbar-nav > li > a.purple_btn {
+  background: #6C307D;
+  color: #fff;
+}
+
 h1 {
   text-transform: uppercase;
   text-align: center;
